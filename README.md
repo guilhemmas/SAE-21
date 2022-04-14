@@ -9,4 +9,3 @@ Revoir, cette fois-ci, en groupe tous les objectifs, les livrables et toutes les
 
 ### 28/03/2022:
 Répartition des taches
- voir image ici: https://github.com/guilhemmas/SAE-21/edit/main/README.md
