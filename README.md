@@ -43,11 +43,12 @@ Au final le firewall ressemblait à cela :
 
 Problème sur le routeur MikroTik n°17 impossible d'arriver à me reconnecter dessus, même avec le reset et tout ce qui est adressage sur ma machine (adresse ip de ma machine sur le même réseau que le routeur et en ayant ajouté l'adresse du routeur en tant que route par défaut sur ma machine) il etait impossible d'accéder à la page de configuration MikroTik. J'ai perdu 1h40 à essayer de résoudre ce problème et je me suis dit que de toute façcon la configuration précédente, étant pas la bonne, j'ai décidé de prendre un nouveau routeur MikroTik n°2 et de tout recommencer à 0.</br></br>
 
-J'ai décidé cette cette fois-ci grâce à la discussion avec Monsieur Pujas puis aussi grâce aux recherches d'utiliser la politique FORWARD car elle permet à un administrateur de contrôler où les paquets peuvent être routés au sein d'un LAN. Par exemple, pour autoriser la retransmission du LAN entier. Ce choix s'est fait pour les paquets TCP donc pour le port 80 maisss les paquets UDP
-<img src="https://github.com/guilhemmas/SAE-21/blob/main/Config2TCP.png"/> </br>
-<img src="https://github.com/guilhemmas/SAE-21/blob/main/config2UDP.png"/> </br>
-<img src="https://github.com/guilhemmas/SAE-21/blob/main/config2DROP.png"/> </br>
-# PHOTO
+J'ai décidé cette cette fois-ci grâce à la discussion avec Monsieur Pujas puis aussi grâce aux recherches d'utiliser la politique FORWARD car elle permet à un administrateur de contrôler où les paquets peuvent être routés au sein d'un LAN. Par exemple, pour autoriser la retransmission du LAN entier. Comme on peut voir sur les captures d'écarn ci-dessus, il n'y a que les nouveaux paques et les paquets déjà connus qui sont acceptés. Ce choix s'est fait pour les paquets TCP donc pour le port 80 mais aussi les paquets UDP et donc sur le port 53 :
+<img src="https://github.com/guilhemmas/SAE-21/blob/main/Config2TCP.png"/> </br></br></br>
+
+<img src="https://github.com/guilhemmas/SAE-21/blob/main/config2UDP.png"/> </br></br></br>
+
+<img src="https://github.com/guilhemmas/SAE-21/blob/main/config2DROP.png"/> </br></br></br>
 
 ## 22/04/2022 (tp):
 
