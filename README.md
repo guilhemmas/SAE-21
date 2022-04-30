@@ -1,9 +1,9 @@
 # SAE-21
-## Construire un réseau informatique pour une petite structure</br></br> # PHOTO
+## Construire un réseau informatique pour une petite structure</br></br> 
 
 ## 24/03/2022 (td):
 
-Premier pas dans cette SAE avec l'explication du sujet par Frederic Comby. 
+Premier pas dans cette SAE avec la présentation du sujet par Frederic Comby. 
 
 ## 25/03/2022 (td):
 
@@ -27,7 +27,7 @@ Faire un point avec le groupe + continuer les recherches.
 
 ## 15/04/2022 (td+tp):
 
-Séances entièrement dédié au essais de la premiere version du firewall du MikroTik pour ce rendre à la fin avec, Philippe Pujas, que les paquets acceptés.  </br>
+Séances entièrement dédiées aux essais de la premiere version du firewall du MikroTik pour ce rendre compte à la fin avec, Philippe Pujas, que les paquets acceptés et bloqués n'était pas les bons et que donc le firewall laisait passer ce qu'il ne fallait pas.  </br>
 Propriétés de base du routeur (onglet Quickset):</br>
 <img src="https://github.com/guilhemmas/SAE-21/blob/main/Mikrotik_quickset.png"/> </br></br>
 
@@ -41,8 +41,9 @@ Au final le firewall ressemblait à cela :
 <img src="https://github.com/guilhemmas/SAE-21/blob/main/Congi1firewall.png"/> </br>
 ## 21/04/2022 (2 td):
 
-Problème sur le routeur MikroTik n°17 impossible d'arriver à me reconnecter dessus, même avec le reset et tout ce qui est adressage sur ma machine (adresse ip de ma machine sur le même réseau que le routeur et en ayant ajouté l'adresse du routeur en tant que route par défaut sur ma machine) il etait impossible d'accéder à la page de configuration MikroTik. J'ai perdu 1h40 à essayer de résoudre ce problème et je me suis dit que de toute façcon la configuration précédente étant pas la bonne j'ai décidé de prendre un nouveau routeur MikroTik n°2 et de tout recommencer à 0.</br></br>
+Problème sur le routeur MikroTik n°17 impossible d'arriver à me reconnecter dessus, même avec le reset et tout ce qui est adressage sur ma machine (adresse ip de ma machine sur le même réseau que le routeur et en ayant ajouté l'adresse du routeur en tant que route par défaut sur ma machine) il etait impossible d'accéder à la page de configuration MikroTik. J'ai perdu 1h40 à essayer de résoudre ce problème et je me suis dit que de toute façcon la configuration précédente, étant pas la bonne, j'ai décidé de prendre un nouveau routeur MikroTik n°2 et de tout recommencer à 0.</br></br>
 
+J'ai décidé cette cette fois-ci grâce à la discussion avec Monsieur Pujas puis aussi grâce aux recherches d'utiliser la politique FORWARD car elle permet à un administrateur de contrôler où les paquets peuvent être routés au sein d'un LAN. Par exemple, pour autoriser la retransmission du LAN entier. Ce choix s'est fait pour les paquets TCP donc pour le port 80 maisss les paquets UDP
 <img src="https://github.com/guilhemmas/SAE-21/blob/main/Config2TCP.png"/> </br>
 <img src="https://github.com/guilhemmas/SAE-21/blob/main/config2UDP.png"/> </br>
 <img src="https://github.com/guilhemmas/SAE-21/blob/main/config2DROP.png"/> </br>
@@ -50,6 +51,5 @@ Problème sur le routeur MikroTik n°17 impossible d'arriver à me reconnecter d
 
 ## 22/04/2022 (tp):
 
-finition de la config routeur en voyant avec Adrien les adresses qu’il a distribué au Serveur WEB et aussi au Routeur se trouvant dans la partie virtuelle pour pouvoir ajouter l’accès sur le firewall du routeur MikroTik.
-# PHOTO
+Finition de la config routeur en voyant avec Adrien les adresses qu’il a distribué au Serveur WEB et aussi au Routeur se trouvant dans la partie virtuelle pour pouvoir ajouter l’accès sur le firewall du routeur MikroTik. Et ensuite on a fait tous les tests pour cloturer cette SAE. Pour ma part, le firewall semblait fonctionner comme il le fallait. Les filtres ajoouter sont les bons.
 
